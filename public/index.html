@@ -43,8 +43,8 @@
 					if (data.success) {
 						// Kiểm tra role trả về từ server
 						window.location.href = data.role === 'admin'
-							? "examples/Admin/dashboard.html"
-							: "examples/Users/dashboard.html"; // Chuyển đến trang tương ứng
+							? "public/examples/Admin/dashboard.html"
+							: "public/examples/Users/dashboard.html"; // Chuyển đến trang tương ứng
 					} else {
 						alert(data.message || "Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin.");
 					}

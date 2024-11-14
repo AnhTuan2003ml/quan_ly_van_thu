@@ -11,6 +11,10 @@ const app = express();
 const db = new sqlite3.Database('./data/db.db');
 
 // Middleware
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
