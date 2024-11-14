@@ -24,7 +24,7 @@ app.use('/doc', express.static(path.join(__dirname, 'doc')));
 // API Routes
 app.use('/api/users', apiUsers(db));
 app.use('/api/vb_den', apiVbDen(db));
-app.use('/auth', apiAuth(db));
+app.use('/api/auth', apiAuth(db));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
